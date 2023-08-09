@@ -213,6 +213,7 @@ h2 {
 .text-hero {
     text-align: center;
     width: 496px;
+    padding-bottom: 48px;
 }
 
 .button-hero {
