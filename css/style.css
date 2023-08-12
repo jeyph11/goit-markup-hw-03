@@ -4,10 +4,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
-    margin: 0;
-    
 }
-
 
 :root {
     --iris: #4D5AE5;
@@ -32,6 +29,7 @@ body {
     letter-spacing: 0.32px;
     font-style: normal;
     color: var(--slate, #434455);
+    margin: 0; 
 }
 
 h1 {
@@ -51,6 +49,7 @@ h2 {
     font-weight: 700;
     line-height: 2.5rem;
     letter-spacing: 0.72px;
+    text-align: center
 }
 
 h3 {
@@ -60,16 +59,6 @@ h3 {
     font-weight: 500;
     line-height: 1.5rem;
     letter-spacing: 0.4px;
-}
-
-.button-text {
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.5rem;
-    letter-spacing: 0.64px;
-    cursor: pointer;
 }
 
 /* .link-text {
@@ -114,55 +103,61 @@ h3 {
     letter-spacing: 0.54px;
 }
 
+.button-text {
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem;
+    letter-spacing: 0.64px;
+    cursor: pointer;
+}
+
 .webtext {
     color: var(--iris)
 }
 
-li {
-    list-style: none;
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
-a {
-    text-decoration: none;
+.feature-container,
+.service-container,
+.teamcard-container, 
+.project-container {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 120px 15px 120px 15px;
 }
 
-h3,
-p,
-h2 {
+h1, h2, h3, h4, h5, h6, p, ul, a  {
     margin: 0;
-}
-
-h2 {
-    text-align: center;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
 }
 
 .header {
     border-bottom: 1px solid var(--cornflower);
     background: var(--white);
-
-
 }
 
 .navigation-container {
-    width: 1128px;
+    width: 1158px;
+    padding: 0 15px;
     height: 72px;
     display: flex;
-    margin-inline: auto;
     justify-content: space-between;
     align-items: center;
-   
+    margin: 0 auto;
 }
 
 .navigation-list {
     display: flex;
     gap: 40px;
     padding-left: 66px;
-}
-
-.address-container {
-    display: flex;
-    align-content: center;
-    gap: 40px;
 }
 
 .navigation {
@@ -172,15 +167,34 @@ h2 {
 
 .navigation-link {
     position: relative;
-
 }
 
 .navigation-link:hover {
-    text-decoration: none;
     color: var(--ocean, #404BBF);
 }
 
 .navigation-link:hover::before {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--ocean, #404BBF);
+}
+
+.address-container {
+    display: flex;
+    gap: 40px;
+}
+.address-container a {
+    position: relative;
+}
+.address-container a:hover {
+    color: var(--ocean, #404BBF);
+}
+.address-container a:hover::before {
     content: '';
     position: absolute;
     bottom: -20px;
@@ -208,12 +222,12 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    row-gap: 48px;
 }
 
 .text-hero {
     text-align: center;
     width: 496px;
-    padding-bottom: 48px;
 }
 
 .button-hero {
@@ -226,25 +240,6 @@ h2 {
 
 .button-hero:hover {
     background: var(--ocean);
-}
-
-.feature-container,
-.service-container,
-.teamcard-container {
-    width: 1128px;
-
-    padding: 120px 0;
-}
-
-.feature-section,
-.service-section,
-.teamcard-section {
-    display: flex;
-    justify-content: center;
-}
-
-.teamcard-section {
-    background: var(--cloud, #F4F4FD);
 }
 
 .feature-list {
@@ -263,8 +258,6 @@ h2 {
 .service-list {
     display: flex;
     gap: 24px;
-    padding: 0;
-    margin: 0;
 }
 
 .service-item {
@@ -273,6 +266,10 @@ h2 {
     flex-direction: column;
     gap: 24px;
     padding-top: 72px;
+}
+
+.teamcard-section {
+    background: var(--cloud);
 }
 
 .teamcard-list {
@@ -290,7 +287,7 @@ h2 {
     gap: 32px;
     margin-top: 72px;
     border-radius: 0px 0px 4px 4px;
-    background: var(--white, #FFF);
+    background: var(--white);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
@@ -314,13 +311,14 @@ h2 {
 
 .footer-container {
     color: #FFFFFF;
-    width: 1128px;
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
-.footer-container a {
+.footer-container .logo {
     color: white;
 }
-
 
 .button-filter {
     padding: 12px 24px;
@@ -328,7 +326,8 @@ h2 {
     border-radius: 4px;
     border: 1px solid var(--cornflower, #E7E9FC);
     background: var(--cloud);
-    color: var(--iris)
+    color: var(--iris);
+    margin-bottom: 72px;
 }
 
 .button-filter:hover {
@@ -349,17 +348,15 @@ h2 {
     height: 420px;
     flex-direction: column;
     gap: 32px;
-    margin: 12px 0;
     border: 1px solid var(--cornflower);
     background: var(--white);
 }
 
 .project-list {
-    width: 1128px;
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-    padding: 60px 0 0 0;
+    row-gap: 60px;
     margin: 0;
 }
 
