@@ -29,9 +29,63 @@ body {
     letter-spacing: 0.32px;
     font-style: normal;
     color: var(--slate, #434455);
-    margin: 0; 
+    margin: 0;
 }
 
+.address-container .link {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5rem;
+    letter-spacing: 0.32px;
+    font-style: normal;
+    color: var(--slate);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul
+ {
+    margin: 0;
+    padding: 0;
+}
+
+.link {
+text-decoration: none;
+}
+
+.list {
+list-style: none;
+}
+
+.footer-logo {
+    color: var(--white);
+}
+
+.webtext {
+    color: var(--iris)
+}
+
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section {
+    padding: 120px 0;
+}
 h1 {
     font-family: Roboto;
     font-size: 56px;
@@ -42,43 +96,26 @@ h1 {
     color: var(--white, #FFF);
 }
 
-h2 {
+.section-title {
     font-family: Roboto;
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
     line-height: 2.5rem;
     letter-spacing: 0.72px;
-    text-align: center
+    text-align: center;
+    margin-bottom: 72px;
 }
 
-h3 {
+.description-title {
     font-family: Roboto;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
-    line-height: 1.5rem;
+    line-height: 1.rem;
     letter-spacing: 0.4px;
+    color: var(--navy-blue);
 }
-
-/* .link-text {
-    font-family: Roboto;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1rem;
-    letter-spacing: 4%;
-    text-decoration-line: underline;
-} */
-
-/* .small-text {
-    font-family: Roboto;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 0.875rem;
-    letter-spacing: 4%;
-} */
 
 .medium-text {
     font-family: Roboto;
@@ -113,45 +150,16 @@ h3 {
     cursor: pointer;
 }
 
-.webtext {
-    color: var(--iris)
-}
-
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-.feature-container,
-.service-container,
-.teamcard-container, 
-.project-container {
-    width: 1158px;
-    margin: 0 auto;
-    padding: 120px 15px 120px 15px;
-}
-
-h1, h2, h3, h4, h5, h6, p, ul, a  {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-}
-
 .header {
     border-bottom: 1px solid var(--cornflower);
-    background: var(--white);
 }
 
 .navigation-container {
-    width: 1158px;
-    padding: 0 15px;
     height: 72px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
+  
 }
 
 .navigation-list {
@@ -165,7 +173,7 @@ h1, h2, h3, h4, h5, h6, p, ul, a  {
     align-items: center;
 }
 
-.navigation-link {
+.navigation-link, .link {
     position: relative;
 }
 
@@ -188,9 +196,6 @@ h1, h2, h3, h4, h5, h6, p, ul, a  {
     display: flex;
     gap: 40px;
 }
-.address-container a {
-    position: relative;
-}
 .address-container a:hover {
     color: var(--ocean, #404BBF);
 }
@@ -205,15 +210,7 @@ h1, h2, h3, h4, h5, h6, p, ul, a  {
     background-color: var(--ocean, #404BBF);
 }
 
-.address-container a {
-    font-family: Roboto;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5rem;
-    letter-spacing: 0.32px;
-    font-style: normal;
-    color: var(--slate);
-}
+
 
 .hero-background {
     height: 600px;
@@ -244,8 +241,7 @@ h1, h2, h3, h4, h5, h6, p, ul, a  {
 
 .feature-list {
     display: flex;
-    gap: 24px;
-    padding: 0;
+    gap: 24px; 
 }
 
 .feature-item {
@@ -265,7 +261,6 @@ h1, h2, h3, h4, h5, h6, p, ul, a  {
     width: 360px;
     flex-direction: column;
     gap: 24px;
-    padding-top: 72px;
 }
 
 .teamcard-section {
@@ -280,12 +275,6 @@ h1, h2, h3, h4, h5, h6, p, ul, a  {
 }
 
 .teamcard-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 32px;
-    margin-top: 72px;
     border-radius: 0px 0px 4px 4px;
     background: var(--white);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -295,10 +284,10 @@ h1, h2, h3, h4, h5, h6, p, ul, a  {
     display: flex;
     width: 232px;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    margin: auto;
     gap: 8px;
-    padding-bottom: 32px;
+    padding: 32px 0;
 }
 
 .footer {
@@ -314,10 +303,6 @@ h1, h2, h3, h4, h5, h6, p, ul, a  {
     width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
-}
-
-.footer-container .logo {
-    color: white;
 }
 
 .button-filter {
