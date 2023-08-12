@@ -86,6 +86,11 @@ list-style: none;
 .section {
     padding: 120px 0;
 }
+
+.header {
+    border-bottom: 1px solid var(--cornflower);
+}
+
 h1 {
     font-family: Roboto;
     font-size: 56px;
@@ -150,16 +155,11 @@ h1 {
     cursor: pointer;
 }
 
-.header {
-    border-bottom: 1px solid var(--cornflower);
-}
-
 .navigation-container {
     height: 72px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  
 }
 
 .navigation-list {
@@ -171,8 +171,7 @@ h1 {
 .navigation {
     display: flex;
     align-items: center;
-}
-
+    }
 .navigation-link, .link {
     position: relative;
 }
@@ -196,9 +195,11 @@ h1 {
     display: flex;
     gap: 40px;
 }
+
 .address-container a:hover {
     color: var(--ocean, #404BBF);
 }
+
 .address-container a:hover::before {
     content: '';
     position: absolute;
@@ -209,8 +210,6 @@ h1 {
     border-radius: 2px;
     background-color: var(--ocean, #404BBF);
 }
-
-
 
 .hero-background {
     height: 600px;
@@ -308,7 +307,6 @@ h1 {
 .button-filter {
     padding: 12px 24px;
     border-radius: 4px;
-    border-radius: 4px;
     border: 1px solid var(--cornflower, #E7E9FC);
     background: var(--cloud);
     color: var(--iris);
@@ -340,7 +338,7 @@ h1 {
 .project-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    column-gap: 24px;
     row-gap: 60px;
     margin: 0;
 }
