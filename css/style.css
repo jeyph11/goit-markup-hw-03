@@ -238,6 +238,10 @@ h1 {
     background: var(--ocean);
 }
 
+.button-hero:active {
+    background: var(--iris)
+}
+
 .feature-list {
     display: flex;
     gap: 24px; 
@@ -295,21 +299,32 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    
 }
 
 .footer-container {
-    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
     width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
+    row-gap: 17.5px;
+    
+    
 }
 
 .button-filter {
     padding: 12px 24px;
     border-radius: 4px;
-    border: 1px solid var(--cornflower, #E7E9FC);
+    border: 1px solid var(--cornflower);
     background: var(--cloud);
     color: var(--iris);
+    /* margin-bottom: 72px; */
+}
+
+.button-filter-container {
     margin-bottom: 72px;
 }
 
@@ -341,6 +356,8 @@ h1 {
     column-gap: 24px;
     row-gap: 60px;
     margin: 0;
+    /* add */
+    justify-content: space-between;
 }
 
 .project-content {
