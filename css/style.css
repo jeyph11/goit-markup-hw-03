@@ -84,7 +84,11 @@ list-style: none;
 }
 
 .section {
-    padding: 120px 0;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.section-no-padding-top {
+    padding-bottom: 120px;
 }
 
 .header {
@@ -171,7 +175,7 @@ h1 {
 .navigation {
     display: flex;
     align-items: center;
-    }
+}
 .navigation-link, .link {
     position: relative;
 }
@@ -184,7 +188,7 @@ h1 {
     content: '';
     position: absolute;
     bottom: -20px;
-    left: 0;
+    /* left: 0; */
     width: 100%;
     height: 4px;
     border-radius: 2px;
@@ -299,8 +303,6 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
 }
 
 .footer-container {
@@ -311,8 +313,6 @@ h1 {
     margin: 0 auto;
     padding: 0 15px;
     row-gap: 17.5px;
-    
-    
 }
 
 .button-filter {
@@ -321,23 +321,21 @@ h1 {
     border: 1px solid var(--cornflower);
     background: var(--cloud);
     color: var(--iris);
-    /* margin-bottom: 72px; */
 }
 
 .button-filter-container {
+    display: flex;
     margin-bottom: 72px;
+    justify-content: center;
+    text-align: center;
+    gap: 24px;
+    padding-top: 96px;
 }
 
 .button-filter:hover {
     color: var(--white);
     background: var(--ocean);
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
-}
-
-.project-section {
-    display: flex;
-    justify-content: center;
-    text-align: center;
 }
 
 .project-item {
@@ -356,19 +354,12 @@ h1 {
     column-gap: 24px;
     row-gap: 60px;
     margin: 0;
-    /* add */
-    justify-content: space-between;
 }
 
 .project-content {
     display: flex;
     padding: 0px 16px;
     flex-direction: column;
-    align-items: flex-start;
     gap: 8px;
 }
 
-.project-container {
-    padding-top: 108px;
-    padding-bottom: 120px;
-}
